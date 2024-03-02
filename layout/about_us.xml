@@ -1,0 +1,197 @@
+<!-- activity_about_us.xml -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+       >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="MISSING PERSON ABOUT US"
+             android:layout_marginTop="10dp"/>
+        <!-- Mission Statement Section -->
+        <TextView
+            android:id="@+id/textMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Mission Statement" />
+
+        <TextView
+            android:id="@+id/textMissionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Our mission is to leverage technology to assist in locating missing persons and reuniting them with their families and loved ones." />
+
+        <!-- Background Section -->
+        <TextView
+            android:id="@+id/textBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Background" />
+
+        <TextView
+            android:id="@+id/textBackgroundContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="The Missing Person App was developed with the goal of providing a centralized platform for reporting and tracking missing individuals. We believe in the power of community and technology to make a positive impact in times of distress." />
+
+        <!-- Team Section -->
+        <TextView
+            android:id="@+id/textTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textStyle="bold"
+            android:text="Team" />
+
+        <TextView
+            android:id="@+id/textTeamContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Meet the passionate individuals behind the app who are dedicated to making a difference." />
+
+        <!-- Contact Us Section -->
+        <TextView
+            android:id="@+id/textContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textStyle="bold"
+            android:text="Contact Us" />
+
+        <TextView
+            android:id="@+id/textContactUsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Have questions, feedback, or need support? Reach out to us at [contact@missingpersonapp.com](mailto:contact@missingpersonapp.com)." />
+
+        <!-- Privacy and Security Section -->
+        <TextView
+            android:id="@+id/textPrivacySecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Privacy and Security" />
+
+        <TextView
+            android:id="@+id/textPrivacySecurityContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="We take user privacy seriously. Learn more about how we handle your data in our [Privacy Policy](link-to-privacy-policy)." />
+
+        <!-- Stay Connected Section -->
+        <TextView
+            android:id="@+id/textStayConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:text="Stay Connected" />
+
+        <TextView
+            android:id="@+id/textStayConnectedContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Follow us on [Instagram - RanjeshPatel] for updates and news about the app." />
+
+        <!-- Legal Information Section -->
+        <TextView
+            android:id="@+id/textLegalInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textStyle="bold"
+            android:text="Legal Information" />
+
+        <TextView
+            android:id="@+id/textLegalInformationContent"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Read our [Terms of Service](link-to-terms) for information about app usage and responsibilities." />
+
+        <!-- App Version Section -->
+        <TextView
+            android:id="@+id/textAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:textStyle="bold"
+            android:text="App Version" />
+
+        <TextView
+            android:id="@+id/textAppVersionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Current App Version: 1.0.0" />
+
+        <!-- Credits Section -->
+        <TextView
+            android:id="@+id/textCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Credits" />
+
+        <TextView
+            android:id="@+id/textCreditsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="We would like to thank Ranjesh and Zafar for their contribution to our app." />
+    </LinearLayout>
+</ScrollView>

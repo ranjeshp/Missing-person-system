@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home_menu"
+            android:icon="@drawable/baseline_home_24"
+            android:title="HOME" />
+        <item android:id="@+id/menu_finder"
+            android:icon="@drawable/baseline_find_in_page_24"
+            android:title="Finder" />
+        <item android:id="@+id/menu_complaint"
+            android:icon="@drawable/baseline_person_add_24"
+            android:title="Complaint" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Authentication">
+            <menu>
+                <item android:id="@+id/menu_logout"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Logout" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="Helping">
+        <menu>
+            <item android:id="@+id/menu_chatbox"
+                android:icon="@drawable/baseline_chat_24"
+                android:title="Chat Box" />
+            <item android:id="@+id/menu_feedback"
+                android:icon="@drawable/baseline_feedback_24"
+                android:title="Feedback" />
+            <item android:id="@+id/menu_about"
+                android:drawableLeft="@drawable/baseline_info_24"
+                android:title="About Us"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_bg"
+    tools:context=".Register">
+
+    <!-- res/layout/activity_registration.xml -->
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="179dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="SIGNUP"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="355dp"
+        android:layout_height="461dp"
+        android:gravity="center"
+        android:background="@drawable/light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:drawablePadding="15sp"
+            android:drawableTint="#C9050505"
+            android:hint="Name"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="15sp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="214dp" />
+    <LinearLayout
+        android:id="@+id/linearLayoutContact"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        <Spinner
+            android:id="@+id/countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:spinnerMode="dropdown"
+            android:drawablePadding="15sp"
+
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:drawablePadding="15sp"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+
+
+    </LinearLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/contact"-->
+<!--            android:layout_width="278dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/shape"-->
+<!--            android:drawableTint="#C9050505"-->
+<!--            android:drawablePadding="15sp"-->
+<!--            android:hint="contact"-->
+<!--            android:inputType="phone"-->
+<!--            android:padding="10dp"-->
+<!--            tools:layout_editor_absoluteX="63dp"-->
+<!--            tools:layout_editor_absoluteY="341dp" />-->
+
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="276dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:orientation="horizontal"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Reemail">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:drawableLeft="@drawable/baseline_gpp_good_24"
+            android:drawablePadding="15sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="401dp" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape"
+            android:drawableTint="#C9050505"
+            android:drawableLeft="@drawable/baseline_info_24"
+            android:drawablePadding="15sp"
+
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="469dp" />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#121211"
+            android:drawablePadding="15sp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Register"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="547dp"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account ?"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.379"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

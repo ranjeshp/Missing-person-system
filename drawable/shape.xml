@@ -1,0 +1,14 @@
+<!-- res/drawable/shape_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="70dp">
+
+    </corners>
+    <stroke android:color="#121314" android:width="2dp"/>
+<!--    <gradient-->
+<!--        android:startColor="#68C82A2A"-->
+<!--        android:centerColor="#9E0000"-->
+<!--        android:endColor="#403737"-->
+<!--        android:angle="45"/>-->
+
+</shape>

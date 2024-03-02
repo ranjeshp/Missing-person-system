@@ -1,0 +1,74 @@
+<!-- feedback_activity.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_bg"
+    tools:context=".Feedback">
+
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="Welcome to FeedBack"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="325dp"
+        android:layout_height="265dp"
+        android:background="@drawable/light"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextFeedback"
+            android:layout_width="296dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/shape"
+            android:hint="Enter your feedback"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="302dp" />
+
+        <Button
+            android:id="@+id/btnSubmitFeedback"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextFeedback"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Submit Feedback"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="421dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="Click here to go Back.."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
